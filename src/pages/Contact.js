@@ -33,7 +33,7 @@ function Contact() {
                     {contactData.map((data) => {
                         return (
                             <li key={data.id}>
-                                <a href={data.link} target="_blank">{data.title}</a> : {data.desc}</li>
+                                <a href={data.link} target="_blank" rel="noopener noreferrer">{data.title}</a> : {data.desc}</li>
                         )
                     })}
                 </ul>
