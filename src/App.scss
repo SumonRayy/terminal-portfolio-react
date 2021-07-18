@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
+$green: #0ed500;
+$blue: #4262ff;
+$red: #c32020;
+$white: #f4f4f4;
+$black: #0f0f0f;
+$bg: #1f1f1f;
+$bg2: #282c34;
+
+body {
+  background-color: $bg2;
+  font-family: "Source Code Pro", monospace;
+}
+
+.window {
+  background-color: $bg;
+  margin: 50px;
+  height: 80vh;
+  padding: 20px;
+  box-shadow: 10px 10px 15px $black;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: auto;
+  p {
+    color: $white;
+    margin: 5px;
+    margin-left: 40px;
+    font-size: 1.8em;
+  }
+}
+
+#scrolls::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $white;
+}
+
+#scrolls::-webkit-scrollbar {
+  width: 7px;
+  background-color: $white;
+}
+
+#scrolls::-webkit-scrollbar-thumb {
+  background-color: $bg2;
+}
+
+.column {
+  flex-direction: row-reverse;
+}
+
+// Home styles
+
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+// Projects styles
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  ul {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  li {
+    color: $white;
+  }
+  a {
+    color: $blue;
+  }
+}
+
+/// Prompt styles
+.prompt {
+  color: $white;
+  flex: 0 1;
+  padding-left: 20px;
+  font-size: 2rem;
+  max-width: 100em;
+}
+
+.prompt-user {
+  color: $green;
+}
+
+.prompt-path {
+  color: $blue;
+}
+
+input {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: $white;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/// Commands styles
+
+.commands {
+  color: $blue;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+#current {
+  color: $white;
+}
+
+.page,
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+#help {
+  color: $red;
+  cursor: pointer;
+}
+
+// ABOUT
+.about {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  .prompt {
+    flex: 0 1;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  .window {
+    margin: 20px;
+    min-height: 80vh;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    p {
+      font-size: 0.8rem;
+      margin-left: 0;
+    }
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .prompt {
+    flex: 0;
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .commands {
+    flex-direction: row;
+    font-size: 0.7rem;
+    justify-content: space-between;
+  }
+}
