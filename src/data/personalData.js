@@ -41,4 +41,24 @@ const projects = [
     }
 ]
 
-export {myData, projects}
+const contactData = [
+    {
+        id: 1,
+        title: 'Email',
+        link: 'mailto:sumonrayy@gmail.com',
+        desc: 'mail me for any query'
+    },
+    {
+        id: 2,
+        title: 'GitHub',
+        link: 'https://github.com/SumonRayy',
+        desc: 'Follow me on GitHub to watch my Repos'
+    },
+    {
+        id: 3,
+        title: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/sumon-roy-29a2b3186/',
+        desc: 'Follow me at LinkedIn'
+    },
+]
+export {myData, contactData, projects}
