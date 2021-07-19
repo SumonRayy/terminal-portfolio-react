@@ -1,6 +1,6 @@
 # Terminal Style Portfolio Website
 
-## Made with ReactJS, SCSS, NodeJS
+### Made with ReactJS, SCSS, NodeJS
 
 # Getting Started with Create React App
 
