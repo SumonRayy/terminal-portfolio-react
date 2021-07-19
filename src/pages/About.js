@@ -3,7 +3,7 @@ import Commands from '../components/Commands';
 import Prompt from '../components/Prompt'
 import { myData } from '../data/personalData';
 
-function About({username}) {
+function About() {
     return (
         <div className='window column'>
                     <Commands currentPage='about'/>
