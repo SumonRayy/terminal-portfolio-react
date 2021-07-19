@@ -5,7 +5,7 @@ import { myData } from '../data/personalData';
 
 function About() {
     return (
-        <div className='window column'>
+        <div className='window column'  id='scrolls'>
                     <Commands currentPage='about'/>
                 <div className='about'>
                     <Prompt path='about'/>                    

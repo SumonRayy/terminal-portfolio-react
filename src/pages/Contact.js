@@ -6,7 +6,7 @@ import { contactData } from '../data/personalData'
 
 function Contact() {
     return (
-        <div className="window cloumn">
+        <div className="window cloumn" id='scrolls'>
             <div className="contact">
                 <Prompt path="contact"/>
                 

@@ -8,7 +8,7 @@ function Home() {
 
 
     return (
-        <div className='window'>
+        <div className='window' id='scrolls'>
             
             <div className='home'>
                 <Prompt path='home'/>
